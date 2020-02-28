@@ -33,6 +33,38 @@
   <script src="js/jquery-eu-cookie-law-popup.js"></script>
   <!-- END GDPR Cookie Box -->
 
+  <!-- Rcording Button -->
+  <style>
+          button {
+        width: 14px;
+        height: 14px;
+        font-size: 0;
+        background-color: red;
+        border: 0;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 4px;
+        outline: none;
+      }
+      .Rec{
+        animation-name: pulse;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes pulse{
+        0%{
+          box-shadow: 0px 0px 5px 0px rgba(173,0,0,.3);
+        }
+        65%{
+          box-shadow: 0px 0px 5px 13px rgba(173,0,0,.3);
+        }
+        90%{
+          box-shadow: 0px 0px 5px 13px rgba(173,0,0,0);
+        }
+      }
+  </style>
 </head>
 
 <body id="page-top" class="eupopup eupopup-bottomright">
@@ -67,6 +99,8 @@
       <div class="container">
         <div class="row">
           <h2 class="text-white mb-4">Latest News COVID-19</h2>
+          <span style="margin-top: 5px;margin-left: 10px"> <p style="margin-bottom: 5px;color:red"><button class="Rec"></button><span style="margin-top: 1px">Live Updates</span>
+          </p></span>
         </div>
       </div>
       <div class="row">
@@ -171,6 +205,7 @@
   <!-- Facebook SDK -->
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v6.0"></script>
+
 
 
   <!-- Custom scripts for this template -->
